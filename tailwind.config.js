@@ -4,8 +4,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        "hero-pattern": "url('pattern-bg.png')",
+      backgroundImage: () => ({
+        "hero-pattern": "url('images/pattern-bg.png')",
       }),
     },
   },

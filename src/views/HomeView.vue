@@ -6,7 +6,7 @@
     >
       <!-- Search Input -->
       <div class="w-full max-w-screen-sm">
-        <h1 class="text-white text-center text-3xl pb-4">IP Address Tracker</h1>
+        <h1 class="text-white text-center text-3xl pb-4 text-ip-address">{{textLabelIpAddressTracker}}</h1>
         <div class="flex">
 
 
@@ -19,8 +19,11 @@
 </template>
 
 <style>
-
+  .text-ip-address {
+    font-weight: 600;
+  }
 </style>
+
 
 <script>
 
@@ -33,7 +36,7 @@ export default {
 
   data() {
     return {
-      img: './images/pattern-bg.png'
+      textLabelIpAddressTracker: 'IP Address Tracker'
     }
   }
 }
