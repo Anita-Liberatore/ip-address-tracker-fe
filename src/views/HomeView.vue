@@ -38,7 +38,7 @@ i:hover {
   background-color: hsl(0, 0%, 17%)
 }
 /* Media Queries */
-@media(max-width: 500px) {
+@media only screen and (max-width: 700)  {
 
   .input-part {
     width: 90%;
@@ -58,6 +58,9 @@ i:hover {
     font-size: 14px;
   }
 }
+
+
+
 </style>
 
 

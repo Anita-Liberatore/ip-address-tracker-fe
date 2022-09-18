@@ -11,29 +11,29 @@
                gap-y-4 
                gap-x-12 
                px-40 
-               pt-8 
+               pt-2 
                pb-12">
 
-            <div class="flex flex-col row">
-                <h3 class="font-bold mb-2 uppercase"> IP Address</h3>
-                <span class="text-2xl">{{ipInfo.address}}</span>
-            </div>
-
-            <div class="flex flex-col row">
-                <h3 class="font-bold mb-2 uppercase"> Location</h3>
-                <span class="text-2xl">{{ipInfo.city}}</span>
-            </div>
-
-            <div class="flex flex-col row">
-                <h3 class="font-bold mb-2 uppercase"> Timezone</h3>
-                <span class="text-2xl">UTC {{ipInfo.timezone}}</span>
-            </div>
-
-            <div class="flex flex-col row">
-                <h3 class="font-bold mb-2 uppercase"> Isp</h3>
-                <span class="text-2xl">{{ipInfo.isp}}</span>
-            </div>
+        <div class="flex flex-col row">
+            <h3 class="font-bold mb-2 uppercase"> IP Address</h3>
+            <span class="text-2xl">{{ipInfo.address}}</span>
         </div>
+
+        <div class="flex flex-col row">
+            <h3 class="font-bold mb-2 uppercase"> Location</h3>
+            <span class="text-2xl">{{ipInfo.city}}</span>
+        </div>
+
+        <div class="flex flex-col row">
+            <h3 class="font-bold mb-2 uppercase"> Timezone</h3>
+            <span class="text-2xl">UTC {{ipInfo.timezone}}</span>
+        </div>
+
+        <div class="flex flex-col row">
+            <h3 class="font-bold mb-2 uppercase"> Isp</h3>
+            <span class="text-2xl">{{ipInfo.isp}}</span>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -57,7 +57,7 @@ span {
 }
 
 /* Media Queries */
-@media(max-width: 500px) {
+@media only screen and (max-width: 700px) {
 
     .card-detail {
         max-width: 80%;
@@ -79,25 +79,10 @@ span {
     }
 }
 
-/* Media Queries */
-@media(max-width: 1024px) {
+@media only screen and (max-width: 900) {
 
-.card-detail {
-    padding: 10px 0 10px 0;
-}
-
-.row {
-    align-items: center;
-}
-
-span {
-    text-align: center;
-    font-size: 20px;
-    width: 80%;
-}
-
-h3 {
-    font-size: 15px;
-}
+    .card-detail {
+        top: 145px;
+    }
 }
 </style>
